@@ -1,0 +1,74 @@
+# Server Configuration
+PORT=5000
+NODE_ENV=development
+
+# Database Configuration
+MONGODB_URI=mongodb+srv://admin:<@Ngash6104>@gradeharvest.gvcnvhi.mongodb.net/?retryWrites=true&w=majority&appName=gradeharvest
+DB_NAME=gradeharvest
+
+# JWT Configuration
+JWT_SECRET=your_jwt_secret_key_here
+JWT_EXPIRE=7d
+JWT_REFRESH_SECRET=your_jwt_refresh_secret_here
+JWT_REFRESH_EXPIRE=30d
+
+# Email Configuration (SMTP)
+SMTP_HOST=smtp.gmail.com
+SMTP_PORT=587
+SMTP_USER=your_email@gmail.com
+SMTP_PASS=your_app_password
+FROM_EMAIL=noreply@gradeharvest.com
+FROM_NAME=GradeHarvest
+
+# Payment Gateway Configuration
+# Stripe
+STRIPE_SECRET_KEY=sk_test_your_stripe_secret_key
+STRIPE_PUBLISHABLE_KEY=pk_test_your_stripe_publishable_key
+STRIPE_WEBHOOK_SECRET=whsec_your_webhook_secret
+
+# PayPal
+PAYPAL_CLIENT_ID=your_paypal_client_id
+PAYPAL_CLIENT_SECRET=your_paypal_client_secret
+PAYPAL_MODE=sandbox
+
+# M-Pesa Configuration
+MPESA_CONSUMER_KEY=your_mpesa_consumer_key
+MPESA_CONSUMER_SECRET=your_mpesa_consumer_secret
+MPESA_SHORTCODE=your_shortcode
+MPESA_PASSKEY=your_passkey
+
+# Plagiarism Detection APIs
+COPYLEAKS_API_KEY=your_copyleaks_api_key
+COPYLEAKS_EMAIL=your_copyleaks_email
+TURNITIN_API_KEY=your_turnitin_api_key
+GPTZERO_API_KEY=your_gptzero_api_key
+
+# File Upload Configuration
+MAX_FILE_SIZE=10485760
+ALLOWED_FILE_TYPES=pdf,doc,docx,txt,rtf
+
+# Rate Limiting
+RATE_LIMIT_WINDOW=15
+RATE_LIMIT_MAX_REQUESTS=100
+
+# Session Configuration
+SESSION_SECRET=your_session_secret_here
+
+# Frontend URL (for CORS)
+FRONTEND_URL=http://localhost:3000
+
+# Admin Configuration
+ADMIN_EMAIL=admin@gradeharvest.com
+ADMIN_PASSWORD=admin123456
+
+# Notification Settings
+ENABLE_EMAIL_NOTIFICATIONS=true
+ENABLE_SMS_NOTIFICATIONS=false
+
+# Cron Job Settings
+STATS_UPDATE_CRON=0 0 */14 * *
+PAYMENT_REMINDER_CRON=0 9 * * *
+
+# Security
+BCRYPT_ROUNDS=12
+CORS_ORIGIN=http://localhost:3000
